@@ -5,16 +5,23 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # Sample movie dataset
 data = {
-    'Title': ['Toy Story', 'Inception', 'The Matrix', 'Titanic', 'Avatar'],
+    'Title': [
+        'Toy Story','Inception','The Matrix','Titanic','Avatar',
+        '3 Idiots','Dangal','PK','Bahubali','Lagaan'
+    ],
     'Description': [
         'animation toys friendship',
-        'dream subconscious mind thriller',
+        'dream subconscious thriller',
         'virtual reality future technology',
         'romance love ship tragedy',
-        'future alien planet action'
+        'future alien planet action',
+        'college life friendship comedy',
+        'wrestling father daughter sports',
+        'alien comedy social message',
+        'epic war kingdom action',
+        'sports cricket village drama'
     ]
 }
-
 df = pd.DataFrame(data)
 
 # ML STEP 1: Convert text to numbers
